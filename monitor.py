@@ -647,6 +647,8 @@ def check_tazkarti(sent_items):
 if __name__ == "__main__":
     print("Starting Bot...")
     sent_items = load_sent_items()
+    send_telegram_message("✅ Telegram test successful!")
+print("Telegram test message sent.")
 
     check_vox_cinemas(sent_items)
     check_tazkarti(sent_items)
