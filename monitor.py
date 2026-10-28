@@ -646,11 +646,12 @@ def check_tazkarti(sent_items):
 
 if __name__ == "__main__":
     print("Starting Bot...")
-    test_ok = send_telegram_message("✅ Telegram test successful!")
-print(f"Telegram test result: {test_ok}")
+    test_ok = send_telegram_message("Telegram test successful!")
+    print(f"Telegram test result: {test_ok}")
 
     sent_items = load_sent_items()
     check_vox_cinemas(sent_items)
     check_tazkarti(sent_items)
 
     print("Done.")
+    
